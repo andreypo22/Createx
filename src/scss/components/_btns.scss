@@ -1,0 +1,122 @@
+.btn {
+  display: inline-block;
+  padding: 0 39px;
+  width: max-content;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-primary);
+  background-color: transparent;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include hover {
+    border-color: var(--color-success);
+    color: var(--color-white);
+    background-color: var(--color-success);
+  }
+
+  &:active {
+    border-color: var(--color-malachite);
+    color: var(--color-white);
+    background-color: var(--color-malachite);
+  }
+
+  &.focus-visible {
+    border-color: var(--color-success);
+    color: var(--color-white);
+    background-color: var(--color-success);
+  }
+
+  &-fill {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+
+  &-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+
+    &:disabled {
+      opacity: .5;
+    }
+
+    &-trending {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:disabled {
+        background-color: var(--color-gray-300);
+        border-color: var(--color-gray-300);
+        opacity: 1;
+
+        & svg {
+          fill: var(--color-gray-800);
+        }
+      }
+    }
+
+    &-sale {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:disabled {
+        background-color: var(--color-gray-300);
+        border-color: var(--color-gray-300);
+        opacity: 1;
+
+        & svg {
+          fill: var(--color-gray-800);
+        }
+      }
+    }
+
+    &-catalog {
+      transition: opacity .2s ease-in-out;
+
+      &.swiper-button-disabled {
+        opacity: 0;
+        cursor: default;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--color-gray-400);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-gray-800);
+
+    &--active {
+      border-color: var(--color-primary);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.nav-middle {
+  margin-right: auto;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray-800);
+    transition: color .2s ease-in-out, outline .2s ease-in-out;
+
+    &-red {
+      color: var(--color-danger);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--color-primary);
+    }
+
+    &.focus-visible {
+      outline: 1px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:active {
+      color: var(--color-success);
+    }
+  }
+}

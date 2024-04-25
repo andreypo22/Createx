@@ -1,0 +1,40 @@
+.breadcrumbs {
+  background-color: var(--color-gray-200);
+
+  &__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+
+     &:last-child {
+      & .breadcrumbs__link {
+        color: var(--color-gray-600);
+        cursor: default;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-gray-800);
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-gray-800);
+  }
+}

@@ -1,0 +1,47 @@
+.look {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--gap);
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  &__top {
+    grid-column: 12 span;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__image {
+    grid-column: 5 span;
+  }
+
+  &__slider {
+    grid-column: 7 / span 6;
+  }
+
+  &__swiper {
+    margin-bottom: 80px;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 6px;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--color-gray-800);
+  }
+}

@@ -1,0 +1,45 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav-top";
+@import "./components/nav-middle";
+@import "./components/search";
+@import "./components/hero";
+@import "./components/arrows";
+@import "./components/btns";
+@import "./components/dropdown";
+@import "./components/gender";
+@import "./components/arrivals";
+@import "./components/card";
+@import "./components/banners";
+@import "./components/subscribe-form";
+@import "./components/timer";
+@import "./components/categories";
+@import "./components/tranding";
+@import "./components/sale";
+@import "./components/store";
+@import "./components/services";
+@import "./components/instagram";
+@import "./components/blog";
+@import "./components/brands";
+@import "./components/subscribe";
+@import "./components/custom-checkbox";
+@import "./components/footer";
+@import "./components/social";
+@import "./components/breadcrumbs";
+@import "./components/catalog-filters";
+@import "./components/price-range";
+@import "./components/sort";
+@import "./components/accordion";
+@import "./components/product";
+@import "./components/tabs";
+@import "./components/review";
+@import "./components/look";
+@import "./components/interesting";
+@import "./components/recently";
+@import "./components/modals";

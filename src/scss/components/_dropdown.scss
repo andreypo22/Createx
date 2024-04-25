@@ -1,0 +1,107 @@
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 0px 0px 4px 4px;
+  z-index: 5;
+
+  &-active {
+    display: block;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--gap);
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  &__column {
+    grid-column: 2 span;
+  }
+
+  &__sale {
+    grid-column: 3 span;
+
+    &-image {
+      margin-bottom: 16px;
+    }
+
+    &-title {
+      display: inline-block;
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--color-gray-800);
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      padding: 0 24px;
+      font-size: 12px;
+      line-height: 36px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &-nav {
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--color-gray-800);
+
+      &--red {
+        color: var(--color-danger);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+
+    &-link {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 1px;
+      color: var(--color-gray-900);
+      text-transform: uppercase;
+    }
+  }
+
+  &__border {
+    grid-column: 1 span;
+    display: flex;
+    justify-content: center;
+
+    & span {
+      width: 1px;
+      height: 100%;
+      background-color: #dadbdd;
+      // background: radial-gradient(var(--color-gray-400) 0%, var(--color-gray-400) 50%, var(--color-gray-400) 100%, var(--color-gray-400) 50%, var(--color-gray-400) 0%);
+    }
+  }
+}

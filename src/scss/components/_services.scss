@@ -1,0 +1,62 @@
+.services {
+  &__container {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+
+  &__list {
+   display: flex;
+   justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &:not(:last-child)::after {
+      content: url(../img/services-divider.svg);
+      position: absolute;
+      top: 0;
+      right: -45px;
+      bottom: 0;
+    }
+
+    &-shipping {
+      background-image: url(../img/shipping.svg);
+    }
+
+    &-support {
+      background-image: url(../img/support.svg);
+    }
+
+    &-guarantee {
+      background-image: url(../img/guarantee.svg);
+    }
+
+    &-payment {
+      background-image: url(../img/payment.svg);
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-gray-900);
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray-700);
+  }
+}
